@@ -37,10 +37,10 @@ public class MyCalculator {
 	}
 	
 	// n! of an integer
-	public int nfactorial(int n){
+	public int nfactorial(float n){
 		int factorial = 1;
 		
-		for(int i=1;i<n;i++)
+		for(int i=1;i<=n;i++)
 			factorial *= i;
 		
 		return factorial;
@@ -59,7 +59,8 @@ public class MyCalculator {
 			else return middle;
 		}
 		
-		return 1;
+		return -1;//returns -1 if the value to be searched is not found in the given array.
 	}
 	
 }
+
